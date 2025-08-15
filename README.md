@@ -1,16 +1,15 @@
-# Welcome to your Lovable project
+
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/73dba3f8-df39-4e3d-9784-5b1f8fc4da99
+A motivação para este projeto é permitir que os usuarios possam realizar login e autenticação em sistemas digitais utilizando de um recurso offline (hardware de comunicação de baixa proximidade). Espera-se que na conclusão deste projeto se obtenha um produto totalmente funcional e livre para todos.
+Caso queira abraçar a ideia e ser um colaborador do projeto fique a vontade para baixar o mesmo.
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/73dba3f8-df39-4e3d-9784-5b1f8fc4da99) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -60,9 +59,9 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/73dba3f8-df39-4e3d-9784-5b1f8fc4da99) and click on Share -> Publish.
+
+
 
 ## Can I connect a custom domain to my Lovable project?
 

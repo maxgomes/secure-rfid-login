@@ -1,9 +1,10 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import RFIDDeviceStatus from "@/components/RFIDDeviceStatus";
 import RFIDCardManager from "@/components/RFIDCardManager";
+import RFIDCardDetector from "@/components/RFIDCardDetector";
 import SecurityLogs from "@/components/SecurityLogs";
 import SecuritySettings from "@/components/SecuritySettings";
-import { Shield, CreditCard, Activity, Settings } from "lucide-react";
+import { Shield, CreditCard, Activity, Settings, Zap } from "lucide-react";
 
 export default function Dashboard() {
   return (
@@ -34,10 +35,14 @@ export default function Dashboard() {
       {/* Main Content */}
       <main className="container mx-auto px-6 py-8">
         <Tabs defaultValue="device" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4 lg:w-fit">
+          <TabsList className="grid w-full grid-cols-5 lg:w-fit">
             <TabsTrigger value="device" className="flex items-center gap-2">
               <Shield className="h-4 w-4" />
               <span className="hidden sm:inline">Dispositivo</span>
+            </TabsTrigger>
+            <TabsTrigger value="detector" className="flex items-center gap-2">
+              <Zap className="h-4 w-4" />
+              <span className="hidden sm:inline">Detector</span>
             </TabsTrigger>
             <TabsTrigger value="cards" className="flex items-center gap-2">
               <CreditCard className="h-4 w-4" />
@@ -55,6 +60,10 @@ export default function Dashboard() {
 
           <TabsContent value="device" className="space-y-6">
             <RFIDDeviceStatus />
+          </TabsContent>
+
+          <TabsContent value="detector" className="space-y-6">
+            <RFIDCardDetector />
           </TabsContent>
 
           <TabsContent value="cards" className="space-y-6">
